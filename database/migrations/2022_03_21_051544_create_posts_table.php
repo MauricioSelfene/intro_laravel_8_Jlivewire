@@ -23,11 +23,9 @@ return new class extends Migration
 
             $table->timestamps();
 
-            $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('course_id')->references('id')->on('courses');
 
 
-            $table->timestamps();
         });
     }
 
